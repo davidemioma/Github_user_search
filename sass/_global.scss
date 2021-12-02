@@ -1,0 +1,30 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --bgc-color: #{rgb(20, 29, 47)};
+  --card-color: #{#1e2a47};
+  --stats-color: #{#ffffff};
+  --logo-color: #{#ffffff};
+  --stats-color: #{#697c9a};
+  --bio-color: #{#ffffff};
+  --btn-color: #{#0079ff};
+}
+
+:root.dark {
+  --bgc-color: #{#f6f8ff};
+  --card-color: #{#fefefe};
+  --bio-color: #{#697c9a};
+  --icon-color: #{#4b6a9b};
+  --stats-color: #{#bbbbbb};
+  --logo-color: #{black};
+}

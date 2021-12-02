@@ -1,0 +1,13 @@
+body {
+  background-color: var(--bgc-color);
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+
+  @media (min-width: 1024px) {
+    width: 60%;
+  }
+}

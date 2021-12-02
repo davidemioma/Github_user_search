@@ -1,0 +1,163 @@
+.card {
+  .nav {
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: 1024px) {
+      padding-top: 0;
+    }
+
+    h2 {
+      font-size: 3rem;
+      color: var(--logo-color);
+    }
+
+    .toggler {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      p {
+        font-size: 1.7rem;
+        color: var(--logo-color);
+        font-weight: 100;
+      }
+
+      .nav_toggler.dark {
+        content: url(../images/icon-moon.svg);
+        filter: invert(0%) sepia(100%) saturate(15%) hue-rotate(237deg)
+          brightness(99%) contrast(104%);
+      }
+    }
+  }
+
+  .form {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    width: 100%;
+    background: var(--card-color);
+    border-radius: 10px;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+
+    div {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      input {
+        width: 100%;
+        font-size: 1.7rem;
+        background: none;
+        border: none;
+        outline: none;
+        color: var(--logo-color);
+      }
+    }
+
+    button {
+      background: var(--btn-color);
+      color: var(--logo-color);
+      border: none;
+      outline: none;
+      border-radius: 5px;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+
+  .user_info {
+    background: var(--card-color);
+    padding: 2rem;
+    border-radius: 10px;
+
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+
+      img {
+        width: 70px;
+        height: 70px;
+        border-radius: 100%;
+        background: black;
+      }
+
+      span {
+        color: var(--bio-color);
+
+        .username {
+          color: var(--btn-color);
+        }
+
+        h2 {
+          font-size: 2.5rem;
+        }
+
+        p {
+          font-size: 1.7rem;
+        }
+      }
+    }
+
+    .bio {
+      color: var(--bio-color);
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+    }
+
+    .account {
+      background: var(--bgc-color);
+      padding: 2rem;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      margin-bottom: 2rem;
+
+      span {
+        color: var(--bio-color);
+
+        p {
+          font-size: 1.7rem;
+          text-align: center;
+          line-height: 1.5;
+        }
+      }
+    }
+
+    .others {
+      display: grid;
+      gap: 1rem;
+
+      span {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+
+        a {
+          font-size: 1.7rem;
+          color: var(--btn-color);
+        }
+
+        p {
+          font-size: 1.7rem;
+          color: var(--bio-color);
+        }
+      }
+    }
+  }
+
+  @media (min-width: 1024px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
